@@ -7,7 +7,6 @@ class Prob_6{
 		
 		// num_char, char_set의 index값 
 		int index = 0;
-//		zfda
 		// int_char에 넣기 위한 값 ( 같은게 계속되면 계속 더해지고 바로 다른거 나오면 바로 1 ) 
 		int same_num = 1;
 		for(int i = 0 ; i < str.length() ; i ++) {
