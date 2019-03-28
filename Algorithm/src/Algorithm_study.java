@@ -4,7 +4,7 @@ public class Algorithm_study {
 
 	public static void main(String[] args) {
 		list_prob_method();
-		
+		//s
 	}
 	public static void list_prob_method() {
 		
