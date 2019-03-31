@@ -8,30 +8,29 @@ public class Algorithm_study {
 	}
 	public static void recursive_prob_method() {
 		
-//		Recursive_prob.Prob_1 prob_1 = new Recursive_prob.Prob_1();
-//		int test_stair_num_prob_1 = 4;
-//		System.out.println(prob_1.get_ways_num_to_up_stairs(test_stair_num_prob_1));
-//		
-//		Recursive_prob.Prob_2 prob_2 = new Recursive_prob.Prob_2();
-//		int test_width_prob_2 = 2; 
-//		int test_height_prob_2 = 2;
-//		int[] test_prohibit_cell_prob_2 = {1,1}; 
-//		System.out.println(prob_2.get_ways_num_to_destination(test_width_prob_2, test_height_prob_2, test_prohibit_cell_prob_2));
-//		
-//		Recursive_prob.Prob_4 prob_4 = new Recursive_prob.Prob_4();
-//		char[] test_char_set_prob_4 = {'a','b','c','d'};
-//		ArrayList<char[]> a = new ArrayList<char[]>();
-//		prob_4.get_subset(test_char_set_prob_4);
-//		
-//		Recursive_prob.Prob_7 prob_7 = new Recursive_prob.Prob_7();
-//		String test_str_prob_7 = "aabb";
-//		prob_7.String_permutation(test_str_prob_7);
+		Recursive_prob.Prob_1 prob_1 = new Recursive_prob.Prob_1();
+		int test_stair_num_prob_1 = 4;
+		System.out.println(prob_1.get_ways_num_to_up_stairs(test_stair_num_prob_1));
+		
+		Recursive_prob.Prob_2 prob_2 = new Recursive_prob.Prob_2();
+		int test_width_prob_2 = 2; 
+		int test_height_prob_2 = 2;
+		int[] test_prohibit_cell_prob_2 = {1,1}; 
+		System.out.println(prob_2.get_ways_num_to_destination(test_width_prob_2, test_height_prob_2, test_prohibit_cell_prob_2));
+		
+		Recursive_prob.Prob_4 prob_4 = new Recursive_prob.Prob_4();
+		char[] test_char_set_prob_4 = {'a','b','c','d'};
+		ArrayList<char[]> a = new ArrayList<char[]>();
+		prob_4.get_subset(test_char_set_prob_4);
 		
 		Recursive_prob.Prob_5 prob_5 = new Recursive_prob.Prob_5();
 		int test_num_1_prob_5 = 4;
 		int test_num_2_prob_5 = 3;
 		System.out.println(prob_5.get_multi_num(test_num_1_prob_5, test_num_2_prob_5));
 		
+		Recursive_prob.Prob_7 prob_7 = new Recursive_prob.Prob_7();
+		String test_str_prob_7 = "aabb";
+		prob_7.String_permutation(test_str_prob_7);
 		
 		
 	}
