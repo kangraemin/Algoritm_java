@@ -4,7 +4,43 @@ public class Algorithm_study {
 
 	public static void main(String[] args) {
 //		list_prob_method();
-		recursive_prob_method();
+//		recursive_prob_method();
+//		check_linked_list_method();
+		linked_list_prob_method();
+	}
+	public static void linked_list_prob_method () {
+		
+	}
+	
+	public static void check_linked_list_method() {
+		Linked_list linked_list = new Linked_list();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.print_all_in_it(); 
+		linked_list.Add_To_tail(2);
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.print_all_in_it();
+		linked_list.Add_At_Pos(1, 0);
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.print_all_in_it();
+		linked_list.Delete_At_tail();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.print_all_in_it();
+		linked_list.Add_At_Pos(123, 0);
+		linked_list.print_all_in_it();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.Delete_At_Pos(0);
+		linked_list.print_all_in_it();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.Delete_At_tail();
+		linked_list.print_all_in_it();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
 	}
 	public static void recursive_prob_method() {
 		

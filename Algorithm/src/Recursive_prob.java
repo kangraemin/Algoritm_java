@@ -4,7 +4,7 @@ import java.util.Stack;
 public class Recursive_prob {
 	
 	static class Prob_1{
-		// 계단 수를 받고
+		// 깊이 우선 탐색 ( 동적 프로그래밍 ) 
 		public int get_ways_num_to_up_stairs(int stair_num) {
 			// 남은 계단수가 1개면 방법은 하나 
 			if(stair_num == 1) {
@@ -46,6 +46,7 @@ public class Recursive_prob {
 //		public boolean is_magic_index__in(int[] int_set) {
 //			
 //		}
+		
 	}
 
 	static class Prob_4 {
