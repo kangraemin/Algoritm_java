@@ -5,15 +5,90 @@ public class Algorithm_study {
 	public static void main(String[] args) {
 //		list_prob_method();
 //		recursive_prob_method();
-//		check_linked_list_method();
+//		check_Double_Linked_List_Method();
+//		System.out.println("구분------------------------------");
+//		check_single_linked_list_method();
 		linked_list_prob_method();
 	}
 	public static void linked_list_prob_method () {
+		System.out.println("Prob_1");
+		LinkedList_prob.Prob_1 prob_1 = new LinkedList_prob.Prob_1();
+		Single_Linked_list single_Linked_list = new Single_Linked_list();
+		single_Linked_list.Add_To_tail(4);
+		single_Linked_list.Add_To_tail(2);
+		single_Linked_list.Add_To_tail(2);
+		single_Linked_list.Add_To_tail(3);
+		single_Linked_list.Add_To_tail(6);
+		single_Linked_list.Add_To_tail(4);
+		single_Linked_list.Add_To_tail(5);
+		Single_Linked_list del_dup_list = prob_1.del_Duplicate_Node(single_Linked_list);
+		del_dup_list.print_all_in_it(); // 42365거 나와야 함 
 		
+		System.out.println("Prob_2");
+		LinkedList_prob.Prob_2 prob_2 = new LinkedList_prob.Prob_2();
+		int k_th_from_behind = 3;
+		// 6이 나와야 함 
+		System.out.println(prob_2.get_k_th_Node_From_Behind(single_Linked_list, k_th_from_behind).data);
+		
+		System.out.println("Prob_3");
+		LinkedList_prob.Prob_3 prob_3 = new LinkedList_prob.Prob_3();
+		Single_Linked_list del_median_node_list = prob_3.del_median_node(single_Linked_list);
+		// 422645가 나와야함 
+		del_median_node_list.print_all_in_it();
+		
+		System.out.println("Prob_4");
+		LinkedList_prob.Prob_4 prob_4 = new LinkedList_prob.Prob_4();
+		int split_int = 3;
+		Single_Linked_list split_list = prob_4.split_node_by_integer(single_Linked_list, split_int);
+		// 224645 가 나와야함 
+		split_list.print_all_in_it();
+		
+		System.out.println("Prob_5");
+		LinkedList_prob.Prob_5 prob_5 = new LinkedList_prob.Prob_5();
+		single_Linked_list.del_all_node();
+		single_Linked_list.Add_To_tail(6);
+		single_Linked_list.Add_To_tail(1);
+		single_Linked_list.Add_To_tail(7);
+		Single_Linked_list add_list = new Single_Linked_list();
+		add_list.Add_To_tail(2);
+		add_list.Add_To_tail(9);
+		add_list.Add_To_tail(5);
+		Single_Linked_list sum_list = prob_5.get_sum_of_lined_list(single_Linked_list, add_list);
+		// 912가 나와야함 
+		sum_list.print_all_in_it();
 	}
-	
-	public static void check_linked_list_method() {
-		Linked_list linked_list = new Linked_list();
+	public static void check_Double_Linked_List_Method() {
+		Double_Linked_list linked_list = new Double_Linked_list();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.print_all_in_it(); 
+		linked_list.Add_To_tail(2);
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.print_all_in_it();
+		linked_list.Add_At_Pos(1, 0);
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.print_all_in_it();
+		linked_list.Delete_At_tail();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.print_all_in_it();
+		linked_list.Add_At_Pos(123, 0);
+		linked_list.print_all_in_it();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.Delete_At_Pos(0);
+		linked_list.print_all_in_it();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+		linked_list.Delete_At_tail();
+		linked_list.print_all_in_it();
+		System.out.println(linked_list.is_it_empty());
+		System.out.println(linked_list.get_size_num());
+	}
+	public static void check_single_linked_list_method() {
+		Single_Linked_list linked_list = new Single_Linked_list();
 		System.out.println(linked_list.is_it_empty());
 		System.out.println(linked_list.get_size_num());
 		linked_list.print_all_in_it(); 
