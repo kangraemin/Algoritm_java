@@ -8,7 +8,70 @@ public class Algorithm_study {
 //		check_Double_Linked_List_Method();
 //		System.out.println("구분------------------------------");
 //		check_single_linked_list_method();
-		linked_list_prob_method();
+//		linked_list_prob_method();
+//		check_stack_method();
+//		check_queue_method();
+		
+	}
+	public static void stack_queue_prob() {
+		
+	}
+	public static void check_queue_method() {
+		Ram_Queue queue = new Ram_Queue();
+		System.out.println(queue.is_it_empty());
+		queue.add(3);
+		System.out.println(queue.is_it_empty());
+		queue.add(2);
+		System.out.println(queue.peek().data);
+		queue.print_all_in_it();
+		queue.add(6);
+		System.out.println("--구분--");
+		queue.print_all_in_it();
+		queue.add(4);
+		System.out.println("--구분--");
+		queue.print_all_in_it();
+		System.out.println("--구분--");
+		System.out.println(queue.peek().data);
+		queue.remove();
+		queue.print_all_in_it();
+		System.out.println("--구분--");
+		queue.remove();
+		queue.print_all_in_it();
+		System.out.println("--구분--");
+		System.out.println(queue.is_it_empty());
+		queue.remove();
+		queue.print_all_in_it();
+		System.out.println("--구분--");
+		queue.remove();
+		System.out.println(queue.is_it_empty());
+//		queue.remove(); //에러뜸
+	}
+	public static void check_stack_method() {
+		Ram_Stack stack = new Ram_Stack();
+		System.out.println(stack.is_it_empty());
+		stack.push(3);
+		System.out.println(stack.is_it_empty());
+		System.out.println("--구분--");
+		stack.print_all_in_it();
+		stack.push(5);
+		int a = stack.peek().data;
+		System.out.println("--구분--");
+		stack.print_all_in_it();
+		System.out.println("--구분--");
+		System.out.println("peek 값 : " + a);
+		stack.push(6);
+		System.out.println("--구분--");
+		stack.print_all_in_it();
+		stack.pop();
+		System.out.println("--구분--");
+		stack.print_all_in_it();
+		System.out.println("--구분--");
+		System.out.println(stack.is_it_empty());
+		stack.pop();
+		stack.pop();
+		System.out.println("--구분--");
+		System.out.println(stack.is_it_empty());
+		
 	}
 	public static void linked_list_prob_method () {
 		System.out.println("Prob_1");
