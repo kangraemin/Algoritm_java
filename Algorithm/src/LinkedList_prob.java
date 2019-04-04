@@ -237,6 +237,20 @@ class Single_Linked_list{
 			
 		}
 	}
+	Single_Linked_list sorting_data_set() {
+		int temp;
+		for(int i = 0 ; i < this.get_size_num() ; i ++) {
+			for(int j = i ; j < this.get_size_num() ; j ++) {
+				if(this.get_data_at_node_pos(i) > this.get_data_at_node_pos(j)) {
+					temp = this.get_data_at_node_pos(i);
+					this.replace_At_Pos(this.get_data_at_node_pos(j), i);
+					this.replace_At_Pos(temp, j);
+				}
+			}
+		}
+		return this;
+	}
+	
 	void del_all_node() {
 		head.next = tail;
 		list_size = 0;

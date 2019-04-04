@@ -11,9 +11,55 @@ public class Algorithm_study {
 //		linked_list_prob_method();
 //		check_stack_method();
 //		check_queue_method();
-		
+		stack_queue_prob();
 	}
 	public static void stack_queue_prob() {
+		Ram_Stack stack = new Ram_Stack();
+		stack.push(5);
+		stack.push(3);
+		stack.push(6);
+		stack.print_all_in_it();
+		
+		Stack_prob.Prob_2 prob_2 = new Stack_prob.Prob_2();
+		System.out.println(prob_2.get_min(stack));
+		
+		Stack_prob.Prob_4.Queue_Using_Stacks Queue_Using_Stacks = new Stack_prob.Prob_4.Queue_Using_Stacks();
+		Queue_Using_Stacks.add(3);
+		Queue_Using_Stacks.add(2);
+		Queue_Using_Stacks.add(6);
+		Queue_Using_Stacks.print_all_in_it();
+		System.out.println(Queue_Using_Stacks.remove().data);
+		System.out.println(Queue_Using_Stacks.remove().data);
+		System.out.println(Queue_Using_Stacks.remove().data);
+		
+		System.out.println("--구분--");
+		Stack_prob.Prob_5.min_Value_Top_Stack min_value_top_stack = new Stack_prob.Prob_5.min_Value_Top_Stack();
+		min_value_top_stack.push(3);
+		min_value_top_stack.print_all_in_it();
+		System.out.println("--구분--");
+		min_value_top_stack.push(1);
+		min_value_top_stack.print_all_in_it();
+		System.out.println("--구분--");
+		min_value_top_stack.push(6);
+		min_value_top_stack.print_all_in_it();
+		System.out.println("--구분--");
+		min_value_top_stack.push(2);
+		min_value_top_stack.print_all_in_it();
+		System.out.println("--구분--");
+		min_value_top_stack.push(0);
+		min_value_top_stack.print_all_in_it();
+		System.out.println("--구분--");
+		min_value_top_stack.pop();
+		min_value_top_stack.print_all_in_it();
+		System.out.println("--구분--");
+		min_value_top_stack.pop();
+		min_value_top_stack.print_all_in_it();
+		System.out.println("--구분--");
+		min_value_top_stack.pop();
+		min_value_top_stack.print_all_in_it();
+		System.out.println("--구분1--");
+		min_value_top_stack.pop();
+		min_value_top_stack.print_all_in_it();
 		
 	}
 	public static void check_queue_method() {
